@@ -49,7 +49,7 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="categoriesButton" layoutX="10.0" layoutY="53.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="45.0" prefWidth="180.0" text="🏷 Categories">
+                  <Button fx:id="categoriesButton" layoutX="10.0" layoutY="53.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#openCategories" prefHeight="45.0" prefWidth="180.0" text="🏷 Categories">
                      <font>
                         <Font size="16.0" />
                      </font>
