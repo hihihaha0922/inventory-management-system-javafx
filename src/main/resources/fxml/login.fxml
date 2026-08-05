@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane
+        maxHeight="-Infinity"
+        maxWidth="-Infinity"
+        minHeight="-Infinity"
+        minWidth="-Infinity"
+        prefHeight="600.0"
+        prefWidth="900.0"
+        xmlns="http://javafx.com/javafx/21"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.jack.inventory.controller.LoginController">   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="350.0" spacing="20.0" style="-fx-background-color: #2563EB;">
+                     <children>
+                        <Label text="📦">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Label>
+                        <Label text="Smart Inventory System" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label text="Manage your inventory efficiently." textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="550.0" spacing="20.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets bottom="40.0" left="60.0" right="60.0" top="40.0" />
+                     </padding>
+                     <children>
+                        <Label text="Welcome Back">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                         <TextField
+                                 fx:id="usernameField"
+                                 prefWidth="300.0"
+                                 promptText="Username" />
+                         <PasswordField
+                                 fx:id="passwordField"
+                                 prefWidth="300.0"
+                                 promptText="Password" />
+                         <Button
+                                 fx:id="loginButton"
+                                 mnemonicParsing="false"
+                                 prefHeight="45.0"
+                                 prefWidth="150.0"
+                                 text="LOGIN"
+                                 onAction="#handleLogin"/>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
