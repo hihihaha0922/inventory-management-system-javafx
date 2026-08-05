@@ -45,8 +45,6 @@ public class DashboardController {
             stage.setScene(new Scene(root));
             stage.show();
 
-            ((Stage) productsButton.getScene().getWindow()).close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -90,6 +88,27 @@ public class DashboardController {
             stage.show();
 
             ((Stage) logoutButton.getScene().getWindow()).close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @FXML
+    private void openSupplier() {
+
+        try {
+
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource("/fxml/supplier.fxml"));
+
+            Parent root = loader.load();
+
+            Stage stage = new Stage();
+            stage.setTitle("Supplier Management");
+            stage.setScene(new Scene(root));
+            stage.show();
 
         } catch (IOException e) {
             e.printStackTrace();
